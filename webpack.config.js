@@ -4,7 +4,7 @@ module.exports = {
     entry: path.join(__dirname, 'view', 'index.jsx'),
     output: {
         path: path.resolve(__dirname, 'view', 'bundle'),
-        filename: 'index.js',
+        filename: '[name].bundle.js',
         publicPath: path.join(__dirname, 'res')
     },
     module: {
