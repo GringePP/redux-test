@@ -4,7 +4,8 @@
   "description": "redux-test",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "webpack-dev-server"
   },
   "author": "gringe",
   "license": "ISC",
@@ -22,5 +23,7 @@
     "node-sass": "^4.7.2",
     "webpack": "^3.10.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
 }
