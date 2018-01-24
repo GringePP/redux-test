@@ -22,6 +22,9 @@ const config = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.scss']
+    },
     devServer: {
         historyApiFallback: {
             index: 'view/index.html'
