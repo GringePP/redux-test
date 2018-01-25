@@ -4,6 +4,8 @@ export default function reducer(state = {count: 0}, action){
     switch(action.type){
         case 'ADD_COUNT':
             return {count: count + 1}
+        case 'REDUCE_COUNT':
+            return {count: count - 1}
         default:
             return state;
     }

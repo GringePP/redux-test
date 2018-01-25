@@ -15,7 +15,7 @@ import {connect} from 'react-redux';
     }
 }*/
 const increaseAction = {type: 'ADD_COUNT'};
-
+const decreaseAction = {type: 'REDUCE_COUNT'}
 function mapStateToProps(state){
     return {
         value: state.count
@@ -24,7 +24,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     return{
-        onIncreaseClick: () => dispatch(increaseAction)
+        onIncreaseClick: () => dispatch(increaseAction),
+        onDecreaseClick: () => dispatch(decreaseAction)
     }
 }
 
